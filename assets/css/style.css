@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #3498db;
+  background: #FFC200;
   color: #fff;
   transition: all 0.4s;
 }
@@ -97,11 +97,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
   max-height: 40px;
+  height:120px;
 }
 
 .img-logo{
-  width: 175px;
-  height: 73px;
+  width: 190px;
+  height: 110px;
 }
 
 @media (max-width: 768px) {
@@ -181,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #FEAE0C;
+  color: #FFC200;
   text-decoration: none;
 }
 
@@ -243,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #3498db;
+  color: #FFC200;
 }
 
 .nav-menu .drop-down > a:after {
@@ -338,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #3498db;
+  color: #FFC200;
   text-decoration: none;
 }
 
@@ -922,10 +923,11 @@ section {
     transition: all 0.3s ease-in-out;
   }
 
-  .services .icon i {
+  .services .icon img {
     font-size: 36px;
     line-height: 1;
     color: #fff;
+    position: center;
   }
 
   .services hr{
@@ -978,7 +980,7 @@ section {
   }
 
   .services .title1div {
-    background-color: yellow; 
+    background-color: #FFC200; 
     padding: 10px;
   }
 
@@ -1050,6 +1052,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-image: url("assets/img/bee-do-background.png");
 }
 
 .more-services .card-body {
@@ -1057,13 +1060,17 @@ section {
   transition: 0.3s;
   transition: ease-in-out 0.4s;
   border-radius: 5px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: 350px 260px;
 }
-.more-services .p1 {
-  width: 5%;
-  height: 100%;
+/* .more-services .p1 {
+  z-index: -1;
+  width: 180px;
+  height: 100px;
   left: 5px;
-  top: 0px;
-}
+  top: 100px;
+} */
 
 .more-services .card-title {
   font-family: Playfair Display;
