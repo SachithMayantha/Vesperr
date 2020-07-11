@@ -99,6 +99,11 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 40px;
 }
 
+.img-logo{
+  width: 175px;
+  height: 73px;
+}
+
 @media (max-width: 768px) {
   #header {
     background: #fff;
@@ -111,6 +116,47 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+/*Popup css*/
+.popup {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+/*----------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu, .nav-menu * {
   margin: 0;
@@ -785,6 +831,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#services {
+  background: #EEF3F4 !important;
+}
+
 .services .icon-box .card {
   min-height: 400px;
 }
@@ -829,13 +879,12 @@ section {
   bottom: 25px;
 }
 .services .icon-box {
-  padding: 10px;
   position: relative;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  border: none;
   transition: all 0.3s ease-in-out;
-  border-radius: 8px;
+  margin-bottom: 30px;
   z-index: 1;
 }
 
@@ -943,6 +992,10 @@ section {
     margin-bottom: 0;
   }
 
+  .card {
+    border: none !important;
+  }
+
   .services .description1 {
     font-family: Muli;
     font-style: normal;
@@ -1000,13 +1053,16 @@ section {
 }
 
 .more-services .card-body {
-  
-  
   padding: 15px 30px;
-  
   transition: 0.3s;
   transition: ease-in-out 0.4s;
   border-radius: 5px;
+}
+.more-services .p1 {
+  width: 5%;
+  height: 100%;
+  left: 5px;
+  top: 0px;
 }
 
 .more-services .card-title {
@@ -1651,6 +1707,7 @@ section {
   background-color: #262626;
   padding: 25px;
 }
+
 .contact .contact-about h3 {
   font-size: 28px;
   margin: 0 0 10px 0;
