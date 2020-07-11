@@ -832,7 +832,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: #EEF3F4 !important;
+  background: #EEF3F4;
 }
 
 .services .icon-box .card {
