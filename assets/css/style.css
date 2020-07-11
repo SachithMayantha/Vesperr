@@ -1587,6 +1587,7 @@ section {
 .pricing #secrow #thirow form .form-row .form-group .textbx{
   background: #F5F6F7;
   border-radius: 4px;
+  border: none;
 }
 
 .pricing .box h4 {
