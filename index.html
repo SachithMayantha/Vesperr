@@ -37,7 +37,7 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>edXBee</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><span><img src="assets/img/edXBee.jpg" class="img-logo" /></span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -89,12 +89,22 @@
         <div class="beeconnect">
           <p id="beeconnect_head"> How you can BeeConnected </p>
           <p id="beeconnect_body"> To get things buzzing, all you have to do is register your institute. To get started… </p>
-          <span><a href="#">Click here <i class="icofont-arrow-right "></i></a></span>
+          <span class="popup" onclick="myFunction()">
+            <a>Click here <i class="icofont-arrow-right "></i><a>
+            <span class="popuptext" id="myPopup">Popup Goes Here!</span>
+          </span>
         </div>
       </div>
     </div>
   </div>
 </section><!-- End Hero -->
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
 
 <main id="main">
 
@@ -135,7 +145,7 @@
     <!-- End Clients Section -->
     <!-- ======= Services Section ======= -->
     <section class="services">
-      <div class="container">
+      <div class="container ">
         <div class="row mx-auto">
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
@@ -387,6 +397,7 @@
         <div class="col-md-12 d-flex align-items-stretch">
           <div class="card text-center" style='background-color: #FFCF35' data-aos="fade-up" data-aos-delay="100">
             <div class="card-body">
+              <img class="d-block p1" src="assets/img/logo/p1.jpg" />
               <h5 class="card-title">What are bee doing</h5>
               <hr style="max-width: 150px;
               background-color: #FFFFFF;
