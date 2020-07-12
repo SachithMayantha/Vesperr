@@ -699,6 +699,14 @@ section {
   font-weight: 600;
   font-size: 26px;
 }
+.who-are-bee{
+  /* position: absolute; */
+  width: 128.83px;
+  height: 91px;
+  left: 161px;
+  top: 1682px;
+
+}
 
 .about .content ul {
   list-style: none;
@@ -1393,7 +1401,6 @@ section {
   display: inline-block;
   margin-right: 5px;
 }
-
 .team .icon-box .card {
   min-height: 300px;
 }
