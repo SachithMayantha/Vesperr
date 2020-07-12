@@ -97,11 +97,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
   max-height: 40px;
+  height:120px;
 }
 
 .img-logo{
-  width: 175px;
-  height: 73px;
+  width: 190px;
+  height: 110px;
 }
 
 @media (max-width: 768px) {
@@ -977,7 +978,7 @@ section {
   }
 
   .services .title1div {
-    background-color: yellow; 
+    background-color: #FFC200; 
     padding: 10px;
   }
 
@@ -1071,6 +1072,9 @@ section {
   transition: 0.3s;
   transition: ease-in-out 0.4s;
   border-radius: 5px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: 350px 260px;
 }
 .more-services .p1 {
   width: 5%;
@@ -1206,15 +1210,24 @@ section {
   margin-right: 2% ;
 }
 
-.block2 .note {
+.bkbtn{
   margin-top: 370px;
   height: 100px;
   margin-left: 0px;
   width: 50%;
   text-align: center;
-  border: 3px solid #FFCF35;
+  border: none;
+  outline:none;
   background-color: #FFCF35;
   padding: 35px 0;
+}
+.bkbtn:focus {
+  border: none;
+  outline: none;
+}
+
+.bkbtn .show {
+  display: none;
 }
 
 .testimonials .block3 {
@@ -1225,7 +1238,12 @@ section {
   margin-right: 2% ;
 }
 
-.block3 .note {
+.note .show{
+  display: block;
+}
+
+.note {
+  display: none;
   margin-top: 60%;
   height: 43%;
   margin-left: 0px;
