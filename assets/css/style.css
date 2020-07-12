@@ -416,8 +416,7 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  
-  
+    
 }
 
 #hero h1 {
@@ -832,7 +831,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: #EEF3F4 !important;
+  background-color: #EEF3F4 !important;
 }
 
 .services .icon-box .card {
@@ -1040,9 +1039,15 @@ section {
 --------------------------------------------------------------*/
 .more-services {
   padding-top: 20px;
+  padding-bottom: 0px !important;
+  background-color: #EEF3F4 !important;
+}
+.more-services .container {
+  margin-bottom: 0px !important;
 }
 
 .more-services .card {
+  position: relative;
   border: 0;
   padding: 20px 20px 20px 20px;
   position: relative;
@@ -1051,6 +1056,15 @@ section {
   background-repeat: no-repeat;
   background-position: center center;
 }
+.card .p1 {
+  position: absolute;
+  width: 50%;
+  height: 75%;
+  right: 0px;
+  top: 0px;
+  border: none !important;
+  transform: rotate(12deg);
+}
 
 .more-services .card-body {
   padding: 15px 30px;
@@ -1058,12 +1072,7 @@ section {
   transition: ease-in-out 0.4s;
   border-radius: 5px;
 }
-.more-services .p1 {
-  width: 5%;
-  height: 100%;
-  left: 5px;
-  top: 0px;
-}
+
 
 .more-services .card-title {
   font-family: Playfair Display;
@@ -1163,8 +1172,84 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+.testimonials {
+  padding-top: 0px;
+  background-color: #EEF3F4
+}
+
 .testimonials .testimonial-wrap {
-  padding-left: 50px;
+  position: relative;
+  width: 1110px; 
+  height: 655px;
+  background-color: white;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonials .container {
+  background-color: white;
+}
+
+.testimonials .block2 {
+  background: url(../img/BFuture.jpg);
+  width: 40%; /* (960-20)/3 */
+  height: 470px;
+  float: left;
+  margin-left: 9% ;
+  margin-right: 2% ;
+}
+
+.block2 .note {
+  margin-top: 370px;
+  height: 100px;
+  margin-left: 0px;
+  width: 50%;
+  text-align: center;
+  border: 3px solid #FFCF35;
+  background-color: #FFCF35;
+  padding: 35px 0;
+}
+
+.testimonials .block3 {
+  background: url(../img/Bitmap.jpg);
+  width: 40%; /* (960-20)/3 */
+  height: 470px;
+  float: left;
+  margin-right: 2% ;
+}
+
+.block3 .note {
+  margin-top: 60%;
+  height: 43%;
+  margin-left: 0px;
+  width: 100%;
+  text-align: left;
+  border: 3px solid  #262626;
+  background-color:  #262626;
+  color: #FFFFFF;
+}
+
+.note .topic {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+  letter-spacing: -0.75px;
+}
+
+.note .des {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* or 187% */
+
+  letter-spacing: 0.6px;
 }
 
 .testimonials .testimonial-item {
