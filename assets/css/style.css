@@ -1178,9 +1178,125 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonial-wrap {
-  padding-left: 50px;
+.testimonials {
+  padding-top: 0px;
+  background-color: #EEF3F4
 }
+
+.testimonials .testimonial-wrap {
+  position: relative;
+  width: 1110px; 
+  height: 675px;
+  background-color: white;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonials .container {
+  background-color: white;
+}
+
+.testimonials .block2 {
+  background: url(../img/BFuture.jpg);
+  width: 40%; /* (960-20)/3 */
+  height: 490px;
+  float: left;
+  margin-left: 9% ;
+  margin-right: 2% ;
+}
+
+.bkbtn{
+  margin-top: 390px;
+  height: 100px;
+  margin-left: 0px;
+  width: 50%;
+  text-align: center;
+  border: none;
+  outline:none;
+  background-color: #FFCF35;
+  padding: 35px 0;
+}
+.bkbtn:focus {
+  border: none;
+  outline: none;
+}
+
+.bkbtn .show {
+  display: none;
+}
+
+.testimonials .block3 {
+  background: url(../img/Bitmap.jpg);
+  width: 40%; /* (960-20)/3 */
+  height: 490px;
+  float: left;
+  margin-right: 2% ;
+}
+
+.note .show{
+  display: block;
+}
+
+.note {
+  display: none;
+  margin-top: 56%;
+  height: 50%;
+  margin-left: 0px;
+  width: 100%;
+  text-align: left;
+  border: 3px solid  #262626;
+  background-color:  #262626;
+  color: #FFFFFF;
+}
+
+.note .topic {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+  letter-spacing: -0.75px;
+}
+
+.note .des {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* or 187% */
+
+  letter-spacing: 0.6px;
+}
+
+.back {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  height: 20px;
+  margin-left: 0px;
+  width: 50%;
+  text-align: left;
+  border: none;
+  outline:none;
+  background-color: #262626;
+  /* identical to box height, or 144% */
+
+  letter-spacing: 0.675px;
+
+  color: #FFFFFF;
+}
+
+.back:focus {
+  border: none;
+  outline: none;
+}
+
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
