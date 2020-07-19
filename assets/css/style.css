@@ -12,7 +12,14 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
+@viewport{
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+@-ms-viewport{
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
 a {
   color: #3498db;
 }
@@ -842,46 +849,11 @@ section {
 --------------------------------------------------------------*/
 #services {
   background: #EEF3F4 !important;
-  height: 1116px !important;
 }
-.service-block {
+.services .icon .training-back img{
   position: relative;
+  left: 20px;
 }
-
-.services-popup {
-  position: absolute;
-  top: 400px !important;
-  left: 28% !important;
-	color: black;
-	width: 650px;
-  height: 200px;
-  visibility: hidden; 
-}
-.services-popup .a1 {
-  background-color:#FFC200;
-  position: relative;
-}
-.a1 .popup-icon {
-  position: absolute;
-  margin-top: 55px !important;
-  margin-left: 20px !important;
-}
-
-.services-popup .a2 {
-  background-color:#FFFFFF;
-}
-
-.a2 .card-title {
-  margin-top: 10% !important;
-  padding-bottom: 5px;
-}
-
-.a2 .card-text {
-  color: #707070;
-  font-size: 14px;
-}
-
-
 .services .icon-box .card {
   min-height: 400px;
 }
@@ -1025,14 +997,26 @@ section {
     color: #111;
   }
 
-  .services .title1div {
-    background-color: #FFC200; 
-    padding: 10px;
+  .services .title1div1{
+    position: relative;
+    left: 5px;
+    top: -30px;
+   padding: 10px;
+   width: 120px;
   }
-
+  .services .title1div2{
+    position: relative;
+    left: -105px;
+    top: -60px;
+   /* padding: 10px; */
+   min-width: 150px;
+  }
   .services .title1divmid {
-    background-color: black; 
-    padding: 10px;
+    position: relative;
+    left: -105px;
+    top: -60px;
+   /* padding: 10px; */
+   min-width: 150px;
   }
   .services .description {
     font-size: 15px;
@@ -1082,33 +1066,6 @@ section {
 .services .icon-box:hover .icon i {
   color: #3498db;
   }*/
-
-.close {
-  position: absolute;
-  right: 3px;
-  top: 3px;
-  width: 32px;
-  height:20px;
-  opacity: 0.3;
-}
-.close:hover {
-  opacity: 1;
-}
-.close:before, .close:after {
-  position: absolute;
-  left: 15px;
-  content: ' ';
-  height: 33px;
-  width: 2px;
-  background-color: #333;
-}
-.close:before {
-  transform: rotate(45deg);
-}
-.close:after {
-  transform: rotate(-45deg);
-}
-  
 
 /*--------------------------------------------------------------
 # More Services
@@ -1262,66 +1219,12 @@ section {
   background-color: white;
 }
 
-
-.testimonials .block-content {
-  height: 490px;
-  width: 100%;
-}
-
-.block-content .block-previous {
-  position: relative;
-  width: 10%; /* (960-20)/3 */
-  height: 100%;
-  float: left;
-  margin-left: 4% ;
-}
-
-.block-previous .previous {
-  position: absolute;
-  background-color: #f1f1f1;
-  color: black;
-  left: 80px !important;
-  top: 230px !important;
-  
-}
-.round {
-  padding: 8px 8px;
-  border: 1px solid #f1f1f1;
-  border-radius: 50%;
-}
-.block-content i {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-}
-
-.block-content i:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.block-content .block-next {
-  position: relative;
-  width: 10%; /* (960-20)/3 */
-  height: 100%;
-  float: left;
-  margin-right: 4% ;
-}
-
-.block-next .next {
-  position: absolute;
-  background-color: #f1f1f1;
-  color: black;
-  right: 80px !important;
-  top: 230px !important;
-}
-
-.block-content .block2 {
+.testimonials .block2 {
   background: url(../img/BFuture.jpg);
-  width: 32%; /* (960-20)/3 */
-  height: 100%;
+  width: 40%; /* (960-20)/3 */
+  height: 490px;
   float: left;
-  margin-left: 2% ;
+  margin-left: 9% ;
   margin-right: 2% ;
 }
 
@@ -1345,10 +1248,10 @@ section {
   display: none;
 }
 
-.block-content .block3 {
+.testimonials .block3 {
   background: url(../img/Bitmap.jpg);
-  width: 32%; /* (960-20)/3 */
-  height: 100%;
+  width: 40%; /* (960-20)/3 */
+  height: 490px;
   float: left;
   margin-right: 2% ;
 }
@@ -1488,8 +1391,6 @@ section {
 .testimonials .owl-dot.active {
   background-color: #3498db !important;
 }
-
-
 
 @media (max-width: 767px) {
   .testimonials .testimonial-wrap {
