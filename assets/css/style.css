@@ -12,7 +12,14 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
+@viewport{
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+@-ms-viewport{
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
 a {
   color: #3498db;
 }
@@ -843,7 +850,10 @@ section {
 #services {
   background: #EEF3F4 !important;
 }
-
+.services .icon .training-back img{
+  position: relative;
+  left: 20px;
+}
 .services .icon-box .card {
   min-height: 400px;
 }
@@ -987,14 +997,26 @@ section {
     color: #111;
   }
 
-  .services .title1div {
-    background-color: #FFC200; 
-    padding: 10px;
+  .services .title1div1{
+    position: relative;
+    left: 5px;
+    top: -30px;
+   padding: 10px;
+   width: 120px;
   }
-
+  .services .title1div2{
+    position: relative;
+    left: -105px;
+    top: -60px;
+   /* padding: 10px; */
+   min-width: 150px;
+  }
   .services .title1divmid {
-    background-color: black; 
-    padding: 10px;
+    position: relative;
+    left: -105px;
+    top: -60px;
+   /* padding: 10px; */
+   min-width: 150px;
   }
   .services .description {
     font-size: 15px;
