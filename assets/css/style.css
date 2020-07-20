@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #3498db;
+  background: #FFC200;
   color: #fff;
   transition: all 0.4s;
 }
@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #FEAE0C;
+  color: #FFC200;
   text-decoration: none;
 }
 
@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #3498db;
+  color: #FFC200;
 }
 
 .nav-menu .drop-down > a:after {
@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #3498db;
+  color: #FFC200;
   text-decoration: none;
 }
 
@@ -417,7 +417,8 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-    
+  
+  
 }
 
 #hero h1 {
@@ -698,6 +699,14 @@ section {
   font-weight: 600;
   font-size: 26px;
 }
+.who-are-bee{
+  /* position: absolute; */
+  width: 128.83px;
+  height: 91px;
+  left: 161px;
+  top: 1682px;
+
+}
 
 .about .content ul {
   list-style: none;
@@ -832,8 +841,46 @@ section {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background-color: #EEF3F4 !important;
+  background: #EEF3F4 !important;
+  height: 1116px !important;
 }
+.service-block {
+  position: relative;
+}
+
+.services-popup {
+  position: absolute;
+  top: 400px !important;
+  left: 28% !important;
+	color: black;
+	width: 650px;
+  height: 200px;
+  visibility: hidden; 
+}
+.services-popup .a1 {
+  background-color:#FFC200;
+  position: relative;
+}
+.a1 .popup-icon {
+  position: absolute;
+  margin-top: 55px !important;
+  margin-left: 20px !important;
+}
+
+.services-popup .a2 {
+  background-color:#FFFFFF;
+}
+
+.a2 .card-title {
+  margin-top: 10% !important;
+  padding-bottom: 5px;
+}
+
+.a2 .card-text {
+  color: #707070;
+  font-size: 14px;
+}
+
 
 .services .icon-box .card {
   min-height: 400px;
@@ -922,10 +969,11 @@ section {
     transition: all 0.3s ease-in-out;
   }
 
-  .services .icon i {
+  .services .icon img {
     font-size: 36px;
     line-height: 1;
     color: #fff;
+    position: center;
   }
 
   .services hr{
@@ -1035,20 +1083,41 @@ section {
   color: #3498db;
   }*/
 
+.close {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 32px;
+  height:20px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+  
+
 /*--------------------------------------------------------------
 # More Services
 --------------------------------------------------------------*/
 .more-services {
   padding-top: 20px;
-  padding-bottom: 0px !important;
-  background-color: #EEF3F4 !important;
-}
-.more-services .container {
-  margin-bottom: 0px !important;
 }
 
 .more-services .card {
-  position: relative;
   border: 0;
   padding: 20px 20px 20px 20px;
   position: relative;
@@ -1056,15 +1125,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-.card .p1 {
-  position: absolute;
-  width: 50%;
-  height: 75%;
-  right: 0px;
-  top: 0px;
-  border: none !important;
-  transform: rotate(12deg);
+  background-image: url("assets/img/bee-do-background.png");
 }
 
 .more-services .card-body {
@@ -1076,7 +1137,13 @@ section {
   background-repeat: no-repeat;
   background-size: 350px 260px;
 }
-
+/* .more-services .p1 {
+  z-index: -1;
+  width: 180px;
+  height: 100px;
+  left: 5px;
+  top: 100px;
+} */
 
 .more-services .card-title {
   font-family: Playfair Display;
@@ -1184,7 +1251,7 @@ section {
 .testimonials .testimonial-wrap {
   position: relative;
   width: 1110px; 
-  height: 655px;
+  height: 675px;
   background-color: white;
   float: left;
   margin-left: auto;
@@ -1195,17 +1262,71 @@ section {
   background-color: white;
 }
 
-.testimonials .block2 {
-  background: url(../img/BFuture.jpg);
-  width: 40%; /* (960-20)/3 */
-  height: 470px;
+
+.testimonials .block-content {
+  height: 490px;
+  width: 100%;
+}
+
+.block-content .block-previous {
+  position: relative;
+  width: 10%; /* (960-20)/3 */
+  height: 100%;
   float: left;
-  margin-left: 9% ;
+  margin-left: 4% ;
+}
+
+.block-previous .previous {
+  position: absolute;
+  background-color: #f1f1f1;
+  color: black;
+  left: 80px !important;
+  top: 230px !important;
+  
+}
+.round {
+  padding: 8px 8px;
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+}
+.block-content i {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.block-content i:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.block-content .block-next {
+  position: relative;
+  width: 10%; /* (960-20)/3 */
+  height: 100%;
+  float: left;
+  margin-right: 4% ;
+}
+
+.block-next .next {
+  position: absolute;
+  background-color: #f1f1f1;
+  color: black;
+  right: 80px !important;
+  top: 230px !important;
+}
+
+.block-content .block2 {
+  background: url(../img/BFuture.jpg);
+  width: 32%; /* (960-20)/3 */
+  height: 100%;
+  float: left;
+  margin-left: 2% ;
   margin-right: 2% ;
 }
 
 .bkbtn{
-  margin-top: 370px;
+  margin-top: 390px;
   height: 100px;
   margin-left: 0px;
   width: 50%;
@@ -1224,10 +1345,10 @@ section {
   display: none;
 }
 
-.testimonials .block3 {
+.block-content .block3 {
   background: url(../img/Bitmap.jpg);
-  width: 40%; /* (960-20)/3 */
-  height: 470px;
+  width: 32%; /* (960-20)/3 */
+  height: 100%;
   float: left;
   margin-right: 2% ;
 }
@@ -1238,8 +1359,8 @@ section {
 
 .note {
   display: none;
-  margin-top: 60%;
-  height: 43%;
+  margin-top: 56%;
+  height: 50%;
   margin-left: 0px;
   width: 100%;
   text-align: left;
@@ -1269,6 +1390,32 @@ section {
 
   letter-spacing: 0.6px;
 }
+
+.back {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  height: 20px;
+  margin-left: 0px;
+  width: 50%;
+  text-align: left;
+  border: none;
+  outline:none;
+  background-color: #262626;
+  /* identical to box height, or 144% */
+
+  letter-spacing: 0.675px;
+
+  color: #FFFFFF;
+}
+
+.back:focus {
+  border: none;
+  outline: none;
+}
+
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
@@ -1341,6 +1488,8 @@ section {
 .testimonials .owl-dot.active {
   background-color: #3498db !important;
 }
+
+
 
 @media (max-width: 767px) {
   .testimonials .testimonial-wrap {
@@ -1489,7 +1638,6 @@ section {
   display: inline-block;
   margin-right: 5px;
 }
-
 .team .icon-box .card {
   min-height: 300px;
 }
@@ -1690,6 +1838,7 @@ section {
 .pricing #secrow #thirow form .form-row .form-group .textbx{
   background: #F5F6F7;
   border-radius: 4px;
+  border: none;
 }
 
 .pricing .box h4 {

@@ -28,11 +28,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <style>
-    .form-popup {
-      display: none;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -90,7 +86,7 @@
       
       <div class="imagewrap">
         <button class="btn-watch-video"><i class="ri-play-fill"></i> Watch Video</button>
-        <img src="assets/img/kids-learning.jpeg"alt="" width="100%">
+        <img src="assets/img/kids-learning.png"alt="" width="100%">
 
         <div class="beeconnect">
           <p id="beeconnect_head"> How you can BeeConnected </p>
@@ -105,12 +101,12 @@
   </div>
 </section><!-- End Hero -->
 <script>
-  // When the user clicks on div, open the popup
-  function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
-  </script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
 
 <main id="main">
 
@@ -150,8 +146,8 @@
     </section> -->
     <!-- End Clients Section -->
     <!-- ======= Services Section ======= -->
-    <section class="services">
-      <div class="container ">
+    <section class="services" style="background-color: #EEF3F4;">
+      <div class="container">
         <div class="row mx-auto">
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
@@ -162,7 +158,11 @@
               <p class="description1">Are you a Qualified Trainer and want to benefit from that both locally and internationally?
               </p>
               <hr>
-              <span><a href="#">Learn More <i class="icofont-arrow-right "></i></a></span>
+              <span><a href="servicesFunction()">Learn More <i class="icofont-arrow-right "></i></a></span>
+              <span class="popup" onclick="myFunction()">
+                <a>Click here <i class="icofont-arrow-right "></i><a>
+                <span class="popuptext" id="myPopup">Popup Goes Here!</span>
+              </span>
             </div>
           </div>
 
@@ -192,8 +192,20 @@
 
         </div>
 
+
       </div>
     </section><!-- End Services Section -->
+
+    <!-- Services Popup Script -->
+    <script>
+      // When the user clicks on div, open the popup
+      function servicesFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+      </script>
+    <!-- End of Services Popup Script -->
+
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
       <div class="container">
@@ -203,7 +215,7 @@
             <hr> -->
           </div>
 
-          <div class="row content" style="background-image: url('assets/img/about.jpg');width: 100%; background-size: cover;">
+          <div class="row content" style="background-image: url('assets/img/about.JPG');width: 100%; background-size: cover;">
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150" style="height: 450px;">
               <h3 style="font-family: Playfair Display;
               font-style: normal;
@@ -302,22 +314,24 @@
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
-      <div class="container">
+      <div class="service-block container">
 
         <div class="section-title" data-aos="fade-up">
           <h2>Features</h2>
           <hr>
         </div>
 
-        <div class="row">
+        <div id="serviceRow1" class="row">
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="card text-center" style="width: 18rem; padding-top: 25px;">
-                <div class="icon" style="background-color: #FFC200;"><i class="bx bx-user"></i></div>
+                <div class="icon" style="background-color:#FFC200;"><img src="assets/img/user.png"></div>
                 <div class="card-body">
                   <h5 class="card-title">User</h5>
                   <p class="card-text">Allow the freedom to seamlessly integrate yourself from cumbersome duties to organized workflows.</p>
-                  <a href="#" >Learn more <i class="icofont-arrow-right "></i></a>
+                  <span class="popup" onclick="userFunction()">
+                    <a>Learn more <i class="icofont-arrow-right "></i></a>
+                  </span>
                 </div>
               </div>
             </div>
@@ -326,11 +340,13 @@
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="card text-center" style="width: 18rem; padding-top: 25px;">
-                <div class="icon" style="background-color: black;"><i class="bx bx-user"></i></div>
+                <div class="icon" style="background-color: black;"><img src="assets/img/examination.png"></div>
                 <div class="card-body">
                   <h5 class="card-title">Examination</h5>
                   <p class="card-text">Join others as they discover the ease of operations related to creating, distributing and publishing examinations with WES.</p>
-                  <a href="#" >Learn more <i class="icofont-arrow-right "></i></a>
+                  <span class="popup" onclick="examinationFunction()">
+                    <a>Learn more <i class="icofont-arrow-right "></i></a>
+                  </span>
                 </div>
               </div>
             </div>
@@ -339,27 +355,31 @@
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="card text-center" style="width: 18rem; padding-top: 25px;">
-                <div class="icon" style="background-color: #FFC200;"><i class="bx bx-user"></i></div>
+                <div class="icon" style="background-color: #FFC200;"><img src="assets/img/proctoring.png"></div>
                 <div class="card-body">
                   <h5 class="card-title">Proctoring</h5>
                   <p class="card-text">Take a stand, as we embark
                   with you on an unmatched online examination platform for every student in your centre to benefit from.</p>
-                  <a href="#" >Learn more <i class="icofont-arrow-right "></i></a>
+                  <span class="popup" onclick="proctoringFunction()">
+                    <a>Learn more <i class="icofont-arrow-right "></i></a>
+                  </span>
                 </div>
               </div>
             </div>
           </div>         
         </div>
 
-        <div class="row">
+        <div id="serviceRow2" class="sshow row">
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
              <div class="card text-center" style="width: 18rem; padding-top: 25px;">
-              <div class="icon" style="background-color: black;"><i class="bx bx-user"></i></div>
+              <div class="icon" style="background-color: black;"><img src="assets/img/interface.png" style="height: 45px;"></div>
               <div class="card-body">
                 <h5 class="card-title">Interface</h5>
                 <p class="card-text">User interface is designed based on anticipating what a user might want to do ensuring that the interface incorporates elements which are easy to access.</p>
-                <a href="#" >Learn more <i class="icofont-arrow-right "></i></a>
+                <span class="popup" onclick="interfaceFunction()">
+                  <a>Learn more <i class="icofont-arrow-right "></i></a>
+                </span>
               </div>
             </div>
           </div>
@@ -368,11 +388,13 @@
         <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="card text-center" style="width: 18rem; padding-top: 25px;">
-              <div class="icon" style="background-color: #FFC200;"><i class="bx bx-user"></i></div>
+              <div class="icon" style="background-color: #FFC200;"><img src="assets/img/security.png"></i></div>
               <div class="card-body">
                 <h5 class="card-title">Security</h5>
                 <p class="card-text">The team behind WES consists of foreign nationals. Why? Because of security.</p>
-                <a href="#" >Learn more <i class="icofont-arrow-right "></i></a>
+                <span class="popup" onclick="securityFunction()">
+                  <a>Learn more <i class="icofont-arrow-right "></i></a>
+                </span>
               </div>
             </div>
           </div>
@@ -381,19 +403,181 @@
         <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="card text-center" style="width: 18rem; padding-top: 25px;">
-              <div class="icon" style="background-color: black;"><i class="bx bx-user"></i></div>
+              <div class="icon" style="background-color: black;"><img src="assets/img/infinite.png" style="height: 45px;"></div>
               <div class="card-body">
                 <h5 class="card-title">Infinite</h5>
                 <p class="card-text">If knowledge is everything, why should there be borders for expansion. Welcome to limitless services.</p>
-                <a href="#" >Learn more <i class="icofont-arrow-right "></i></a>
+                <span class="popup" onclick="infiniteFunction()">
+                  <a>Learn more <i class="icofont-arrow-right "></i></a>
+                </span>
               </div>
             </div>
           </div>         
         </div>
 
       </div>
+      <div id="userPopup" class="row services-popup">
+        <div class="col-md-3 a1">
+          <div class="icon popup-icon" style="background-color:#FFC200;"><img src="assets/img/user.png"></div>
+        </div>
+        <div class="col-md-9 a2">
+          <h6 class="card-title"><u>User .</u></h6>
+          <p class="card-text">Allow the freedom to seamlessly integrate yourself from cumbersome duties to organized workflows.</p>
+          <a href="#" class="close"></a>
+          <span onclick="closeFunction()">
+            <a class="close"></a>
+          </span>
+        </div>
+      </div>
+      <div id="examinationPopup" class="row services-popup">
+        <div class="col-md-3 a1">
+          <div class="icon popup-icon" style="background-color:#FFC200;"><img src="assets/img/examination.png"></div>
+        </div>
+        <div class="col-md-9 a2">
+          <h6 class="card-title"><u>Examination .</u></h6>
+          <p class="card-text">Join others as they discover the ease of operations related to creating, distributing and publishing examinations with WES.</p>
+          <span onclick="closeFunction()">
+            <a class="close"></a>
+          </span>
+        </div>
+      </div>
+      <div id="proctoringPopup" class="row services-popup">
+        <div class="col-md-3 a1">
+          <div class="icon popup-icon" style="background-color:#FFC200;"><img src="assets/img/proctoring.png"></div>
+        </div>
+        <div class="col-md-9 a2">
+          <h6 class="card-title"><u>Proctoring .</u></h6>
+          <p class="card-text">Take a stand, as we embark
+          with you on an unmatched online examination platform for every student in your centre to benefit from.</p>
+          <span onclick="closeFunction()">
+            <a class="close"></a>
+          </span>
+        </div>
+      </div>
+      <div id="interfacePopup" class="row services-popup">
+        <div class="col-md-3 a1">
+          <div class="icon popup-icon" style="background-color:#FFC200;"><img src="assets/img/interface.png" style="height: 45px;"></div>
+        </div>
+        <div class="col-md-9 a2">
+          <h6 class="card-title"><u>Interface .</u></h6>
+          <p class="card-text">User interface is designed based on anticipating what a user might want to do ensuring that the interface incorporates elements which are easy to access.</p>
+          <span onclick="closeFunction()">
+            <a class="close"></a>
+          </span>
+        </div>
+      </div>
+      <div id="securityPopup" class="row services-popup">
+        <div class="col-md-3 a1">
+          <div class="icon popup-icon" style="background-color:#FFC200;"><img src="assets/img/security.png"></div>
+        </div>
+        <div class="col-md-9 a2">
+          <h6 class="card-title"><u>Security .</u></h6>
+          <p class="card-text">The team behind WES consists of foreign nationals. Why? Because of security.</p>
+          <span onclick="closeFunction()">
+            <a class="close"></a>
+          </span>
+        </div>
+      </div>
+      <div id="infinitePopup" class="row services-popup">
+        <div class="col-md-3 a1">
+          <div class="icon popup-icon" style="background-color:#FFC200;"><img src="assets/img/infinite.png" style="height: 45px;"></div>
+        </div>
+        <div class="col-md-9 a2">
+          <h6 class="card-title"><u>Infinite</u></h6>
+          <p class="card-text">If knowledge is everything, why should there be borders for expansion. Welcome to limitless services.</p>
+          <span onclick="closeFunction()">
+            <a class="close"></a>
+          </span>
+        </div>
+      </div>
+
     </div>
+
+    
   </section><!-- End Services Section -->
+
+  <!-- Services Section Scripts -->
+  <script>
+  // When the user clicks on div, open the popup
+  function userFunction() {
+    document.getElementById("userPopup").style.visibility = "visible";
+    document.getElementById("examinationPopup").style.visibility = "hidden";
+    document.getElementById("proctoringPopup").style.visibility = "hidden";
+    document.getElementById("interfacePopup").style.visibility = "hidden";
+    document.getElementById("securityPopup").style.visibility = "hidden";
+    document.getElementById("infinitePopup").style.visibility = "hidden";
+    
+    document.getElementById("serviceRow1").style.visibility = "hidden";
+    document.getElementById("serviceRow2").style.visibility = "hidden";
+  }
+  function examinationFunction() {
+    document.getElementById("userPopup").style.visibility = "hidden";
+    document.getElementById("examinationPopup").style.visibility = "visible";
+    document.getElementById("proctoringPopup").style.visibility = "hidden";
+    document.getElementById("interfacePopup").style.visibility = "hidden";
+    document.getElementById("securityPopup").style.visibility = "hidden";
+    document.getElementById("infinitePopup").style.visibility = "hidden";
+    
+    document.getElementById("serviceRow1").style.visibility = "hidden";
+    document.getElementById("serviceRow2").style.visibility = "hidden";
+  }
+  function proctoringFunction() {
+    document.getElementById("userPopup").style.visibility = "hidden";
+    document.getElementById("examinationPopup").style.visibility = "hidden";
+    document.getElementById("proctoringPopup").style.visibility = "visible";
+    document.getElementById("interfacePopup").style.visibility = "hidden";
+    document.getElementById("securityPopup").style.visibility = "hidden";
+    document.getElementById("infinitePopup").style.visibility = "hidden";
+    
+    document.getElementById("serviceRow1").style.visibility = "hidden";
+    document.getElementById("serviceRow2").style.visibility = "hidden";
+  }
+  function interfaceFunction() {
+    document.getElementById("userPopup").style.visibility = "hidden";
+    document.getElementById("examinationPopup").style.visibility = "hidden";
+    document.getElementById("proctoringPopup").style.visibility = "hidden";
+    document.getElementById("interfacePopup").style.visibility = "visible";
+    document.getElementById("securityPopup").style.visibility = "hidden";
+    document.getElementById("infinitePopup").style.visibility = "hidden";
+    
+    document.getElementById("serviceRow1").style.visibility = "hidden";
+    document.getElementById("serviceRow2").style.visibility = "hidden";
+  }
+  function securityFunction() {
+    document.getElementById("userPopup").style.visibility = "hidden";
+    document.getElementById("examinationPopup").style.visibility = "hidden";
+    document.getElementById("proctoringPopup").style.visibility = "hidden";
+    document.getElementById("interfacePopup").style.visibility = "hidden";
+    document.getElementById("securityPopup").style.visibility = "visible";
+    document.getElementById("infinitePopup").style.visibility = "hidden";
+    
+    document.getElementById("serviceRow1").style.visibility = "hidden";
+    document.getElementById("serviceRow2").style.visibility = "hidden";
+  }
+  function infiniteFunction() {
+    document.getElementById("userPopup").style.visibility = "hidden";
+    document.getElementById("examinationPopup").style.visibility = "hidden";
+    document.getElementById("proctoringPopup").style.visibility = "hidden";
+    document.getElementById("interfacePopup").style.visibility = "hidden";
+    document.getElementById("securityPopup").style.visibility = "hidden";
+    document.getElementById("infinitePopup").style.visibility = "visible";
+    
+    document.getElementById("serviceRow1").style.visibility = "hidden";
+    document.getElementById("serviceRow2").style.visibility = "hidden";
+  }
+  function closeFunction() {
+    document.getElementById("userPopup").style.visibility = "hidden";
+    document.getElementById("examinationPopup").style.visibility = "hidden";
+    document.getElementById("proctoringPopup").style.visibility = "hidden";
+    document.getElementById("interfacePopup").style.visibility = "hidden";
+    document.getElementById("securityPopup").style.visibility = "hidden";
+    document.getElementById("infinitePopup").style.visibility = "hidden";
+    
+    document.getElementById("serviceRow1").style.visibility = "visible";
+    document.getElementById("serviceRow2").style.visibility = "visible";
+  }
+  </script>
+<!-- End Services Section Scripts -->
 
   <!-- ======= More Services Section ======= -->
   <section id="more-services" class="more-services">
@@ -401,8 +585,7 @@
 
       <div class="row">
         <div class="col-md-12 d-flex align-items-stretch">
-          <div class="card text-center" style='background-color: #FFC200' data-aos="fade-up" data-aos-delay="100">
-            <!--img class="p1" src="assets/img/path7.jpg" /-->
+          <div class="card text-center" style='background-color: #FFCF35' data-aos="fade-up" data-aos-delay="100">
             <div class="card-body" style="background-image: url('assets/img/bee-do-background.png');">
               <h5 class="card-title">What are bee doing</h5>
               <hr style="max-width: 150px;
@@ -503,9 +686,9 @@
         </div>
 
       </div>
-  </section> --><!-- End Features Section -->
+    </section> --><!-- End Features Section -->
 
-    <!-- ======= Testimonials Section ======= -->
+   <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
@@ -515,49 +698,63 @@
               <hr>
             </div>   
             
-            <div class="block2">
-              <button id="btnlms" class="bkbtn" onclick="openForm()">LMS</button>
-              
-              <div class="note" id="lmsForm">
-                <p class="topic">LMS</p>
-                <p class="des">he core objective of edXBee is to provide a cloud based platform incorporating very conceiveable function currently required for both VET and Non-VET organizations including Training Management, Learning Management, E-Learning, E-commerce and regulatory needs.</p>
-              </div>
-                        
-            </div>
+            <div class="block-content">  
+              <div class="block-previous">
+                <i href="#" style="font-size:24px" class="fa previous round">&#xf104;</i>
+              </div> 
 
-            <div class="block3">
-              <button id="btnvcr" class="bkbtn" onclick="openvcrForm()">Virtual Class Room</button>
-              
-              <div class="note" id="vcrForm">
-                <p class="topic">Virtual Class Room</p>
-                <p class="des">he core objective of edXBee is to provide a cloud based platform incorporating very conceiveable function currently required for both VET and Non-VET organizations including Training Management, Learning Management, E-Learning, E-commerce and regulatory needs.</p>
+              <div class="block2">
+                <button id="btnlms" class="bkbtn" onclick="openForm()">LMS</button>
+                
+                <div class="note" id="lmsForm">
+                  <p class="topic">LMS</p>
+                  <p class="des">he core objective of edXBee is to provide a cloud based platform incorporating very conceiveable function currently required for both VET and Non-VET organizations including Training Management, Learning Management, E-Learning, E-commerce and regulatory needs.</p>
+                  <button id="btnlmsback" class="back" onclick="closelmsForm()"> Back <i class="icofont-arrow-right"></i></button>
+                </div>                          
               </div>
+  
+              <div class="block3">
+                <button id="btnvcr" class="bkbtn" onclick="openvcrForm()">Virtual Class Room</button>
+                
+                <div class="note" id="vcrForm">
+                  <p class="topic">Virtual Class Room</p>
+                  <p class="des">he core objective of edXBee is to provide a cloud based platform incorporating very conceiveable function currently required for both VET and Non-VET organizations including Training Management, Learning Management, E-Learning, E-commerce and regulatory needs.</p>
+                  <button id="btnvcrback" class="back" onclick="closevcrForm()"> Back <i class="icofont-arrow-right"></i></button>
+                </div> 
+              </div> 
               
+              <div class="block-next">
+                <i style="font-size:24px" class="fa next round">&#xf105;</i>
+              </div>
             </div>
-            
-          </div>
-        <div  data-aos="fade-up" data-aos-delay="200" style="max-height: 400px;"></div>  
+          <div  data-aos="fade-up" data-aos-delay="200" style="max-height: 400px;"></div>  
 
         </div>      
-    </section><!-- End Testimonials Section -->
-    
-    <!-- Start Testimonials Section Script-->
-    <script>
+    </section>
+    <!-- End Testimonials Section -->
+	<script>
       function openForm() {
         document.getElementById("lmsForm").style.display = "block";
         document.getElementById("btnlms").style.display = "none";
+        document.getElementById("btnlmsback").style.display = "block";
       }
             
       function openvcrForm() {
         document.getElementById("vcrForm").style.display = "block";
         document.getElementById("btnvcr").style.display = "none";
+        document.getElementById("btnvcrback").style.display = "block";
       }
       
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
+      function closevcrForm() {
+        document.getElementById("btnvcrback").style.display = "none";
+        document.getElementById("btnvcr").style.display = "block";
+      }
+
+      function closelmsForm() {
+        document.getElementById("btnlmsback").style.display = "none";
+        document.getElementById("btnlms").style.display = "block";
       }
     </script>
-    <!-- End Testimonials Section Script-->
 
     <!-- ======= Portfolio Section ======= -->
     <!-- <section id="portfolio" class="portfolio">
@@ -715,12 +912,12 @@
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container">
-
         <div class="section-title" data-aos="fade-up">
           <h2>Frequently Asked Questions</h2>
           <hr>
         </div>
-
+        <img src="assets/img/small-ball.png" style="position: relative; left:-300px;">
+        <!-- <img src="assets/img/big-ball.png" style="position: relative; left:300px;"> -->
         <div class="row">
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
@@ -1130,14 +1327,14 @@
         <div class="col-lg-2 col-md-2 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
           <div class="info">
             <h6>Follow us</h6>
-            <div class="social-links">
-              <a href="#"><img src="assets/img/facebook.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook</a><br>
-			        <a href="#"><img src="assets/img/instagram.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instagram</a><br>
+            <div >
+			  <a href="#"><img src="assets/img/facebook.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook</a><br>
+			  <a href="#"><img src="assets/img/instagram.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instagram</a><br>
               <a href="#"><img src="assets/img/twitter.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Twitter</a><br>
               <a href="#"><img src="assets/img/youtube.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Youtube</a><br>
-              <a href="#"><img src="assets/img/tiktok.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tiktok</a><br>
-              <a href="#"><img src="assets/img/skype.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skype</a><br>
-              <a href="#"><img src="assets/img/whatsapp.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whatsapp</a><br>
+			  <a href="#"><img src="assets/img/tiktok.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tiktok</a><br>
+			  <a href="#"><img src="assets/img/skype.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skype</a><br>
+			  <a href="#"><img src="assets/img/whatsapp.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whatsapp</a><br>
             </div>
 
           </div>
