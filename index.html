@@ -24,15 +24,11 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <style>
-    .form-popup {
-      display: none;
-    }
-  </style>
 
 </head>
 
@@ -43,9 +39,7 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span><img src="assets/img/header-logo.png" class="img-logo" /></span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h1 class="text-light" ><a href="index.html"><span><img class="img-logo" src="assets/img/header-logo.png" /></span></a></h1>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
@@ -64,40 +58,69 @@
 
     </div>
   </header><!-- End Header -->
+  
+		
 
   <!-- ======= Bee Section ======= -->
   <section id="bee" class="be-smart">
     <div class="container">
 
-    <!-- <div class="column_bee_line">
-    
-    </div>
-
-    <div class="column_bee">
-    <h1>Be Smart.</h1>
-    <h1>Be Connected.</h1>
-  </div> -->
-  <div class="row">
-    <img src="assets/img/head.jpg" alt="" class="img-fluid col-md-12 col-lg-12 col-sm-12 col-xl-12 col-xs-12"></a>
-  </div>  
-</div>
+      <span >
+        <div class="row">
+          <div class="col-md-4" style="height: 200px; ">
+            <img src="assets/img/Untit11l11ed.png"  >
+          </div>
+          
+          <div class="col-md-8"></br>
+            <h5 class="card-title" style="font-size:45px; font-family: Playfair Display; letter-spacing: 0.6px; color: #262626; line-height: 60px; padding-left: 50px;">
+            Be Smart.</br>
+            Bee Connected
+            </h5>
+          </div>
+        </div>
+    </span>
+  
+  
+  </div>
 </section>
-
+<!--col-md-12 col-sm-12 col-xl-12 col-xs-12-->
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
   <div class="container">
     <div class="row imagewrapparent">
-      
+
       <div class="imagewrap">
         <button class="btn-watch-video"><i class="ri-play-fill"></i> Watch Video</button>
-        <img src="assets/img/kids-learning.jpeg"alt="" width="100%">
+        <img src="assets/img/kids-learning.png"alt="" width="100%">
 
         <div class="beeconnect">
-          <p id="beeconnect_head"> How you can BeeConnected </p>
-          <p id="beeconnect_body"> To get things buzzing, all you have to do is register your institute. To get started… </p>
-          <span class="popup" onclick="myFunction()">
-            <a>Click here <i class="icofont-arrow-right "></i><a>
-            <span class="popuptext" id="myPopup">Popup Goes Here!</span>
+          <p id="beeconnect_head"> How you can BeeConnected</font> </p>
+          <p id="beeconnect_body"> To get things buzzing. </br>
+		  all you have to do is </br>
+		  register your institute. </br>
+		  To get started… </p>
+		 <span class="popup" onclick="myFunction()">
+            <a><font style="Calibri (Body)">Click here </font><i class="fa fa-long-arrow-right"></i><a>
+
+			<!--popup -->
+			<span class="popuptext" id="myPopup">
+			<div class="row">
+				<div class="col-md-4" style="background-color:#FFC200; height: 200px;">
+				<center><img src="assets/img/user.png" style="padding-top: 55px; width: 55px;"></center>
+
+				</div>
+				<div class="col-md-8"></br>
+				<h5 class="card-title"><b>User</b></h5>
+				<hr style="margin: 0; padding: 0;">
+				<p> Allow the freedom to seamlessly integrate yourself from cumbersome duties to organized workflows. Join others as they discover the ease of operations related to
+				creating, distributing and publishing examinations with WES.
+				</div>
+			</div>
+			</span>
+
+			<!--end of popup -->
+
+
           </span>
         </div>
       </div>
@@ -105,88 +128,59 @@
   </div>
 </section><!-- End Hero -->
 <script>
-  // When the user clicks on div, open the popup
-  function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
-  </script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
 
 <main id="main">
 
-  <!-- ======= Clients Section ======= -->
-    <!-- <section id="clients" class="clients clients">
-      <div class="container">
+  
+	<section class="services" style="background-color: #EEF3F4;">
 
-        <div class="row">
 
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="" data-aos="zoom-in">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
+	</section>
     <!-- End Clients Section -->
     <!-- ======= Services Section ======= -->
-    <section class="services">
-      <div class="container ">
+    <section class="services" style="background-color: #EEF3F4;">
+      <div class="container">
         <div class="row mx-auto">
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="title1div">
+              <div class="title1div1">
                 <center><div class="icon"><img src="assets/img/training.png"></div></center>
-              </div>
+              </div><br><br>
               <h4 class="title1" ><a href="">Trainer Enterprise</a></h4>
               <p class="description1">Are you a Qualified Trainer and want to benefit from that both locally and internationally?
               </p>
-              <hr>
-              <span><a href="#">Learn More <i class="icofont-arrow-right "></i></a></span>
+              </br>
+              <center><span><a href="#"><font color="black">Learn More </font><i class="fa fa-long-arrow-right"></i></a></span></center>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0 col-xs-12">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="title1divmid">
-                <center><div class="icon"><img src="assets/img/student.png"></div></center>
-              </div>
+                <center><div class="icon"><img src="assets/img/student2.png"></div></center>
+              </div><br><br>
               <h4 class="title1"><a href="">Students</a></h4>
               <p class="description1">Are you the BigBee or the QueenBee in your institute? You are now at a place that truly appreciates your hardwork and insights.</p>
-              <hr>
-              <span><a href="#">Learn More <i class="icofont-arrow-right "></i></a></span>
+
+              <center><span><a href="#"><font color="black">Learn More </font><i class="fa fa-long-arrow-right"></i></a></span></center>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="title1div">
-                <center><div class="icon"><img src="assets/img/virtual.png"></div></center>
-              </div>
+              <div class="title1div2">
+                <center><div class="icon"><img src="assets/img/vitual.png"></div></center>
+              </div></br></br>
               <h4 class="title1"><a href="">Virtual Tests</a></h4>
               <p class="description1">We are focused at primarily conducting secured online exams. We achieve this through…</p>
-              <hr>
-              <span><a href="#">Learn More <i class="icofont-arrow-right "></i></a></span>
+              </br>
+              <center><span><a href="#"><font color="black">Learn More </font><i class="fa fa-long-arrow-right" color></i></a></span><center>
             </div>
           </div>
 
@@ -198,13 +192,16 @@
     <section id="about" class="about">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
-          <!-- <h2>About Us</h2>
-            <hr> -->
-          </div>
+        <div>
+		  <div class="row content imagebg1" ><img src="assets/img/shp.png"></div>
+		  <div class="row content imagebg2" ><img src="assets/img/child-big.png"></div>
+		  <div class="row content imagebg3" ><img src="assets/img/child-small.png"></div>
+		  <div class="row content imagebg4" ><img src="assets/img/Rectangle Copy 3.png"></div>
+		  <div class="row content imagebg5" ><img src="assets/img/Rectangle (1).png"></div>
+		</div>
 
-          <div class="row content" style="background-image: url('assets/img/about.jpg');width: 100%; background-size: cover;">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150" style="height: 450px;">
+         <!-- <div class="row content" style="background-image: url('assets/img/Group 16.png');width: 100%; background-size: cover;"> -->
+            <div class="col-lg-6 textposition" data-aos="fade-up" data-aos-delay="150" style="height: 450px;">
               <h3 style="font-family: Playfair Display;
               font-style: normal;
               font-weight: normal;
@@ -215,90 +212,42 @@
               letter-spacing: 0.6px;
 
               color: #0B3852; margin-top: 130px;">Who are bee</h3>
-              <hr>
-              <p style="
-              font-family: Muli;
-              font-style: normal;
+              <hr style="margin: 0; padding: 0;"> </br>
+              <p style="font-style: normal;
               font-weight: normal;
-              font-size: 16px;
+              font-size: 14px;
               line-height: 30px;
               /* or 187% */
 
-              letter-spacing: 0.6px;
+
 
               color: #707070;">
-              edXBee ® is the IT subsidiary of Aerial Aerodrome Aviation Academy LLP.
-              Established in 2019, Aerial Aerodrome Aviation Academy entered the Indian market after years of research with the intention to revolutionize the Aviation Skill Based Training in India.
+			  edXBee ® is the IT subsidiary of Aerial </br>
+			  Aerodrome Aviation Academy LLP.</br>
+              Established in 2019, Aerial Aerodrome Aviation </br>
+			  Academy entered the Indian market after years </br>
+			  of research with the intention to
+			  revolutionize </br>
+			  the Aviation Skill Based Training in India.</br>
             </p>
-            <span><a href="#" style="font-family: Muli;
+            <span><a href="#" style="
             font-style: normal;
             font-weight: normal;
-            font-size: 16px;
+            font-size: 13px;
             line-height: 26px;
             /* identical to box height, or 162% */
 
-            letter-spacing: 0.6px;
-
-            color: #0B3852;">Learn More <i class="icofont-arrow-right "></i></a></span>
+            color: #0B3852;">Learn More <i class="fa fa-long-arrow-right"></i></a></span>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            
+
           </div>
         </div>
 
       </div>
     </section><!-- End About Us Section -->
 
-    <!-- ======= Counts Section ======= -->
-   <!--  <section id="counts" class="counts">
-      <div class="container">
-
-        <div class="row">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
-            <img src="assets/img/counts-img.svg" alt="" class="img-fluid">
-          </div>
-
-          <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
-            <div class="content d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="icofont-simple-smile"></i>
-                    <span data-toggle="counter-up">65</span>
-                    <p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="icofont-document-folder"></i>
-                    <span data-toggle="counter-up">85</span>
-                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="icofont-clock-time"></i>
-                    <span data-toggle="counter-up">12</span>
-                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="icofont-award"></i>
-                    <span data-toggle="counter-up">15</span>
-                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section> --><!-- End Counts Section -->
+    
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -313,12 +262,14 @@
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="card text-center" style="width: 18rem; padding-top: 25px;">
-                <div class="icon" style="background-color: #FFC200;"><i class="bx bx-user"></i></div>
+                <div class="icon" style="background-color:#FFC200; padding-top: 8px;"><img src="assets/img/user.png"></div>
                 <div class="card-body">
+				<div class="fe">
                   <h5 class="card-title">User</h5>
                   <p class="card-text">Allow the freedom to seamlessly integrate yourself from cumbersome duties to organized workflows.</p>
-                  <a href="#" >Learn more <i class="icofont-arrow-right "></i></a>
+                  <a href="#" ><b>Learn more</b> <i class="fa fa-long-arrow-right"></i></a>
                 </div>
+				</div>
               </div>
             </div>
           </div>
@@ -326,12 +277,14 @@
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="card text-center" style="width: 18rem; padding-top: 25px;">
-                <div class="icon" style="background-color: black;"><i class="bx bx-user"></i></div>
+                <div class="icon" style="background-color: black;"><img src="assets/img/testing (1).png"></div>
                 <div class="card-body">
+				<div class="fe">
                   <h5 class="card-title">Examination</h5>
                   <p class="card-text">Join others as they discover the ease of operations related to creating, distributing and publishing examinations with WES.</p>
-                  <a href="#" >Learn more <i class="icofont-arrow-right "></i></a>
+                  <a href="#" ><b>Learn more </b><i class="fa fa-long-arrow-right"></i></a>
                 </div>
+				</div>
               </div>
             </div>
           </div>
@@ -339,28 +292,32 @@
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="card text-center" style="width: 18rem; padding-top: 25px;">
-                <div class="icon" style="background-color: #FFC200;"><i class="bx bx-user"></i></div>
+                <div class="icon" style="background-color: #FFC200; padding-top: 17px;"><img src="assets/img/proctoring.png"></div>
                 <div class="card-body">
+				<div class="fe">
                   <h5 class="card-title">Proctoring</h5>
                   <p class="card-text">Take a stand, as we embark
                   with you on an unmatched online examination platform for every student in your centre to benefit from.</p>
-                  <a href="#" >Learn more <i class="icofont-arrow-right "></i></a>
+                  <a href="#" ><b>Learn more</b> <i class="fa fa-long-arrow-right"></i></a>
                 </div>
+				</div>
               </div>
             </div>
-          </div>         
+          </div>
         </div>
 
         <div class="row">
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
              <div class="card text-center" style="width: 18rem; padding-top: 25px;">
-              <div class="icon" style="background-color: black;"><i class="bx bx-user"></i></div>
+              <div class="icon" style="background-color: black; padding-top: 16px;"><img src="assets/img/interface.png" style="height: 45px;"></div>
               <div class="card-body">
+			  <div class="fe">
                 <h5 class="card-title">Interface</h5>
                 <p class="card-text">User interface is designed based on anticipating what a user might want to do ensuring that the interface incorporates elements which are easy to access.</p>
-                <a href="#" >Learn more <i class="icofont-arrow-right "></i></a>
+                <a href="#" ><b>Learn more</b> <i class="fa fa-long-arrow-right"></i></a>
               </div>
+			  </div>
             </div>
           </div>
         </div>
@@ -368,12 +325,14 @@
         <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="card text-center" style="width: 18rem; padding-top: 25px;">
-              <div class="icon" style="background-color: #FFC200;"><i class="bx bx-user"></i></div>
+              <div class="icon" style="background-color: #FFC200; padding-top: 20px;"><img src="assets/img/contract (1).png"></i></div>
               <div class="card-body">
+			  <div class="fe">
                 <h5 class="card-title">Security</h5>
                 <p class="card-text">The team behind WES consists of foreign nationals. Why? Because of security.</p>
-                <a href="#" >Learn more <i class="icofont-arrow-right "></i></a>
+                <a href="#" ><b>Learn more </b><i class="fa fa-long-arrow-right"></i></a>
               </div>
+			  </div>
             </div>
           </div>
         </div>
@@ -381,14 +340,16 @@
         <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="card text-center" style="width: 18rem; padding-top: 25px;">
-              <div class="icon" style="background-color: black;"><i class="bx bx-user"></i></div>
+              <div class="icon" style="background-color: black; padding-top: 18px;"><img src="assets/img/infinite.png" style="height: 45px;"></div>
               <div class="card-body">
+			  <div class="fe">
                 <h5 class="card-title">Infinite</h5>
                 <p class="card-text">If knowledge is everything, why should there be borders for expansion. Welcome to limitless services.</p>
-                <a href="#" >Learn more <i class="icofont-arrow-right "></i></a>
+                <a href="#" ><b>Learn more</b> <i class="fa fa-long-arrow-right"></i></a>
               </div>
+			  </div>
             </div>
-          </div>         
+          </div>
         </div>
 
       </div>
@@ -401,22 +362,21 @@
 
       <div class="row">
         <div class="col-md-12 d-flex align-items-stretch">
-          <div class="card text-center" style='background-color: #FFC200' data-aos="fade-up" data-aos-delay="100">
-            <!--img class="p1" src="assets/img/path7.jpg" /-->
+          <div class="card text-center" style='background-color: #FFCF35' data-aos="fade-up" data-aos-delay="100">
+            <div class="card-body" style="background-image: url('assets/img/Group 7 Copy.jpg');">
 
-            <div class="card-body">
-              <img class="d-block p1" src="assets/img/logo/p1.jpg"/>
-              <h5 class="card-title">What are bee doing</h5>
+              <h5 class="card-title" style="margin-top: 35px;">What are bee doing</h5>
               <hr style="max-width: 150px;
               background-color: #FFFFFF;
               border: 1px solid #FFFFFF;">
-              <p class="card-text">At its inception under the requirements laid out, edxbee focused on
-              creating virtual classrooms.</p>
-              <div class="read-more"><a href="#"> Discover More <i class="icofont-arrow-right"></i></a></div>
+              <p class="card-text">At its inception under the requirements laid out, edxbee focused on</p></b>
+			  <p class="card-text">creating virtual classrooms.</p></br>
+              <div class="read-more"><a href="#"> Discover More <i class="fa fa-long-arrow-right"></i></a></div>
+
             </div>
           </div>
-        </div>        
-      </div>        
+        </div>
+      </div>
     </div>
   </section><!-- End More Services Section -->
 
@@ -505,61 +465,74 @@
         </div>
 
       </div>
-  </section> --><!-- End Features Section -->
+    </section> --><!-- End Features Section -->
 
-    <!-- ======= Testimonials Section ======= -->
+   <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
-          <div class="testimonial-wrap">  
+          <div class="testimonial-wrap">
             <div class="section-title" data-aos="fade-up">
               <h2>BeeFuture</h2>
               <hr>
-            </div>   
-            
-            <div class="block2">
+            </div>
+
+			<div class="block-content">
+              <div class="block-previous">
+                <i href="#" style="font-size:24px" class="fa previous round">&#xf104;</i>
+              </div>
+
+            <div class="block1">
               <button id="btnlms" class="bkbtn" onclick="openForm()">LMS</button>
-              
+
               <div class="note" id="lmsForm">
                 <p class="topic">LMS</p>
                 <p class="des">he core objective of edXBee is to provide a cloud based platform incorporating very conceiveable function currently required for both VET and Non-VET organizations including Training Management, Learning Management, E-Learning, E-commerce and regulatory needs.</p>
+                <button id="btnlmsback" class="back" onclick="closelmsForm()"> Back <i class="fa fa-long-arrow-right"></i></button>
               </div>
-                        
+
             </div>
 
-            <div class="block3">
+            <div class="block2">
               <button id="btnvcr" class="bkbtn" onclick="openvcrForm()">Virtual Class Room</button>
-              
+
               <div class="note" id="vcrForm">
                 <p class="topic">Virtual Class Room</p>
                 <p class="des">he core objective of edXBee is to provide a cloud based platform incorporating very conceiveable function currently required for both VET and Non-VET organizations including Training Management, Learning Management, E-Learning, E-commerce and regulatory needs.</p>
+                <button id="btnvcrback" class="back" onclick="closevcrForm()"> Back <i class="fa fa-long-arrow-right"></i></button>
               </div>
-              
             </div>
-            
-          </div>
-        <div  data-aos="fade-up" data-aos-delay="200" style="max-height: 400px;"></div>  
 
-        </div>      
-    </section><!-- End Testimonials Section -->
-    
-    <!-- Start Testimonials Section Script-->
-    <script>
+            <div class="block-next">
+              <i style="font-size:24px" class="fa next round">&#xf105;</i>
+            </div>
+          </div>
+          
+    </section>
+    <!-- End Testimonials Section -->
+	<script>
       function openForm() {
         document.getElementById("lmsForm").style.display = "block";
         document.getElementById("btnlms").style.display = "none";
+        document.getElementById("btnlmsback").style.display = "block";
       }
-            
+
       function openvcrForm() {
         document.getElementById("vcrForm").style.display = "block";
         document.getElementById("btnvcr").style.display = "none";
+        document.getElementById("btnvcrback").style.display = "block";
       }
-      
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
+
+      function closevcrForm() {
+        document.getElementById("btnvcrback").style.display = "none";
+        document.getElementById("btnvcr").style.display = "block";
+      }
+
+      function closelmsForm() {
+        document.getElementById("btnlmsback").style.display = "none";
+        document.getElementById("btnlms").style.display = "block";
       }
     </script>
-    <!-- End Testimonials Section Script-->
 
     <!-- ======= Portfolio Section ======= -->
     <!-- <section id="portfolio" class="portfolio">
@@ -715,36 +688,38 @@
     </section> --><!-- End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
+    <section id="team" class="team section-bg" style="z-index: 1;">
       <div class="container">
-
         <div class="section-title" data-aos="fade-up">
           <h2>Frequently Asked Questions</h2>
           <hr>
         </div>
+        <img src="assets/img/small-ball.png" style="position: relative; left:-200px;top: -220px;">
+        <img src="assets/img/big-ball.png" style="position: relative; left:850px; top: 190px;">
 
         <div class="row">
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="card " style="width: 18rem; padding-top: 5px;">
-                
-                <div class="card-body">
+              <div class="card que-card">
+
+                <div class="card-body" style="position: absolute;">
                   <h5 class="card-title"><span class="dot"></span>How can I register online</h5>
-                  <p class="card-text">he core objective of edXbee is to provide a cloud based platform incorporating every conceiveable function </p>
-                  <a href="#" >Contact Us <i class="icofont-arrow-right "></i></a>
+                  <p class="card-text">he core objective of edXbee is to provide a cloud based platform incorporating every conceiveable function </p></br></br></br>
+                  <a href="#" ><b>Contact Us </b><i class="icofont-arrow-right "></i></a>
                 </div>
               </div>
             </div>
           </div>
 
+                 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="card " style="width: 18rem; padding-top: 5px;">
-                
-                <div class="card-body">
+              <div class="card " style="width: 20rem; padding-top: 5px;bottom: 450px;">
+
+                <div class="card-body" style="position: absolute;">
                   <h5 class="card-title"><span class="dot"></span>What are the main Courses available</h5>
-                  <p class="card-text">he core objective of edXbee is to provide a cloud based platform incorporating every conceiveable function </p>
-                  <a href="#" >Contact Us <i class="icofont-arrow-right "></i></a>
+                  <p class="card-text">he core objective of edXbee is to provide a cloud based platform incorporating every conceiveable function </p></br></br></br>
+                  <a href="#" ><b>Contact Us</b> <i class="icofont-arrow-right "></i></a>
                 </div>
               </div>
             </div>
@@ -752,29 +727,29 @@
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="card " style="width: 18rem; padding-top: 5px;">
-                
-                <div class="card-body">
-                  <h5 class="card-title"><span class="dot"></span>What are the main 
+              <div class="card " style="width: 20rem; padding-top: 5px;bottom: 450px;">
+
+                <div class="card-body" style="position: absolute;">
+                  <h5 class="card-title"><span class="dot"></span>What are the main
                   Courses available</h5>
-                  <p class="card-text">he core objective of edXbee is to provide a cloud based platform incorporating every conceiveable function </p>
-                  <a href="#" >Contact Us <i class="icofont-arrow-right "></i></a>
+                  <p class="card-text">he core objective of edXbee is to provide a cloud based platform incorporating every conceiveable function </p></br></br></br>
+                  <a href="#" ><b>Contact Us </b><i class="icofont-arrow-right "></i></a>
                 </div>
               </div>
             </div>
-          </div>        
+          </div>
         </div>
-
+<br>
         <div class="row" style="padding-top: 10px;">
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="card " style="width: 18rem; padding-top: 5px;">
-                
-                <div class="card-body">
-                  <h5 class="card-title"><span class="dot"></span>What are the main 
+              <div class="card " style="width: 20rem; padding-top: 5px;bottom: 450px;">
+
+                <div class="card-body" style="position: absolute;">
+                  <h5 class="card-title"><span class="dot"></span>What are the main
                   Courses available</h5>
-                  <p class="card-text">he core objective of edXbee is to provide a cloud based platform incorporating every conceiveable function </p>
-                  <a href="#" >Contact Us <i class="icofont-arrow-right "></i></a>
+                  <p class="card-text">he core objective of edXbee is to provide a cloud based platform incorporating every conceiveable function </p></br></br></br>
+                  <a href="#" ><b>Contact Us</b> <i class="icofont-arrow-right "></i></a>
                 </div>
               </div>
             </div>
@@ -782,12 +757,12 @@
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="card " style="width: 18rem; padding-top: 5px;">
-                
-                <div class="card-body">
+              <div class="card " style="width: 20rem; padding-top: 5px;bottom: 450px;">
+
+                <div class="card-body" style="position: absolute;">
                   <h5 class="card-title"><span class="dot"></span>What are the main Courses available</h5>
-                  <p class="card-text">he core objective of edXbee is to provide a cloud based platform incorporating every conceiveable function </p>
-                  <a href="#" >Contact Us <i class="icofont-arrow-right "></i></a>
+                  <p class="card-text">he core objective of edXbee is to provide a cloud based platform incorporating every conceiveable function </p></br></br></br>
+                  <a href="#" ><b>Contact Us </b><i class="icofont-arrow-right "></i></a>
                 </div>
               </div>
             </div>
@@ -795,13 +770,13 @@
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="card " style="width: 18rem; padding-top: 5px;">
-                
-                <div class="card-body">
-                  <h5 class="card-title"><span class="dot"></span>What are the main 
+              <div class="card " style="width: 20rem; padding-top: 5px;bottom: 450px;">
+
+                <div class="card-body" >
+                  <h5 class="card-title"><span class="dot"></span>What are the main
                   Courses available</h5>
                   <p class="card-text">he core objective of edXbee is to provide a cloud based platform incorporating every conceiveable function </p>
-                  <a href="#" >Contact Us <i class="icofont-arrow-right "></i></a>
+                  <a href="#" ><b>Contact Us</b> <i class="icofont-arrow-right "></i></a>
                 </div>
               </div>
             </div>
@@ -809,21 +784,21 @@
 
         </div>
         <div class="row" data-aos="fade-up">
-          <div class="col-md-12 col-lg-12  mb-5 mb-lg-0" style="text-align: center;padding-top: 25px;">          
-            
-            <a href="#" style="font-family: Muli;
+          <div class="col-md-12 col-lg-12  mb-5 mb-lg-0" style="text-align: center;padding-top: 25px;">
+
+            <a href="#" style="
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 26px;
             /* identical to box height, or 144% */
-            letter-spacing: 0.675px;
 
-            color: #0B3852;"> 
-            More Questions ? Contact us <i class="icofont-arrow-right "></i>
-          </a> 
 
-        </div>       
+            color: #0B3852;">
+            <b>More Questions ? Contact us </b><i class="icofont-arrow-right "></i>
+          </a>
+
+        </div>
       </div>
     </div>
   </section><!-- End Team Section -->
@@ -841,29 +816,29 @@
 
         <div class="col-lg-12 col-md-12">
           <div class="box" data-aos="fade-up" data-aos-delay="200">
-            <h5>Quick</h5>             
+            <h5><b>Quick</b></h5>
             <p>WES Quick Demo will address your key concerns and needs. One of our representatives will demonstrate the improvements and workflow specifically for your institute and relevant to your establishment. Quick Demo is suitable for IT experts and individuals who have a considerable knowledge about working with CMS, LMS, SMS or any other online platforms. Quick Demo can consume up to 30 Minutes or more depending on your questions.</p>
 
-            <h5>Comprehensive</h5>             
+            <h5><b>Comprehensive</b></h5>
             <p>WES Comprehensive Demo is geared to absolute freshers to the online environment. We will assign you with one of our product specialist who will illustrate to you everything you need to know about WES. Note, that this demo can take upto or more than 60 minutes depending on your understanding of the product and we will do everything from our side to make sure to keep jargon to a minimum as possible.</p>
 
           </div>
         </div>
       </div>
-      <div class="row" style="position: relative; margin-top: 100px;margin-bottom: 280px;" data-aos="fade-up" >
-        <div class="col-xl-12 col-md-12 col-sm-12" style=" background-color: #FFCF35; height: 550px;" id="secrow">
-          <div class="col-xl-8 col-md-8 col-sm-8 mx-auto" id="thirow" style="position: absolute; left: 180px; top: -100px;">
+      <div class="row product-demo" data-aos="fade-up" >
+        <div class="col-xl-12 col-md-12 col-sm-12 demo-background" id="secrow">
+          <div class="col-xl-8 col-md-8 col-sm-8 mx-auto demo-form" id="thirow">
             <form style="border: 1px solid #FFCF35; padding: 25px;padding-bottom: 80px;background-color: #FFFFFF;">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label class="formLable" >Your Name</label>
                   <input type="text" class="form-control textbx" id="" >
-                  <span style="font-family: Muli;font-style: normal;font-weight: normal;font-size: 14px;line-height: 14px;text-align: center;letter-spacing: 0.525px;color: #707070;"> First</span>
+                  <span style="font-style: normal;font-weight: normal;font-size: 12px;line-height: 14px;text-align: center;letter-spacing: 0.525px;color: #707070;"> First</span>
                 </div>
                 <div class="form-group col-md-6">
                   <label style="color: white;font-size: 14px;line-height: 30px;">-</label>
                   <input type="text" class="form-control textbx" id="" >
-                  <span style="font-family: Muli;font-style: normal;font-weight: normal;font-size: 14px;line-height: 14px;text-align: center;letter-spacing: 0.525px;color: #707070;"> Last</span>
+                  <span style="font-style: normal;font-weight: normal;font-size: 12px;line-height: 14px;text-align: center;letter-spacing: 0.525px;color: #707070;"> Last</span>
                 </div>
               </div>
               <div class="form-row">
@@ -882,7 +857,7 @@
                   <label class="formLable" >Designation</label>
                   <input type="text" class="form-control textbx" id="" >
                 </div>
-                
+
               </div>
 
               <div class="form-row">
@@ -901,7 +876,7 @@
                   <label class="formLable" >Centre Phone</label>
                   <input type="text" class="form-control textbx" id="" >
                 </div>
-                
+
               </div>
 
               <div class="form-row">
@@ -916,49 +891,48 @@
                     <label class="custom-control-label formLable" for="customRadioInline2">Comprehensive</label>
                   </div>
                 </div>
-                
+
               </div>
-              
+
               <hr style="border: 1px solid #FFCF35;background-color: #FFCF35">
 
-              <span style="font-family: Muli;font-style: normal;font-weight: normal;font-size: 18px;line-height: 26px;
-              text-align: right;letter-spacing: 0.675px;color: #0B3852;">Preferred Day/Time</span>
+              <span style="font-style: normal;font-weight: normal;font-size: 14px;line-height: 26px;
+              text-align: right;letter-spacing: 0.675px;color: #0B3852;"><b>Preferred Day/Time</b></span>
               <br>
-              <span style="font-family: Muli;font-style: normal;font-weight: normal;font-size: 14px;line-height: 30px;
+              <span style="font-style: normal;font-weight: normal;font-size: 13px;line-height: 30px;
               letter-spacing: 0.525px;color: #0B3852;">Please Choose a preferred Day/Time for your 30min Online Demo Session. We will do our best to accommodate your preferences.</span>
 
               <br><br>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label class="formLable" >Preferred Day</label>
-                  
+                  <label class="formLable" ><b>Preferred Day</b></label>
+
                   <select id="" class="form-control textbx">
-                    <option selected>Choose...</option>
+                    <option selected>Any day</option>
                     <option>...</option>
                   </select>
                 </div>
                 <div class="form-group col-md-6">
-                  <label class="formLable" >Preferred Time</label>
+                  <label class="formLable" ><b>Preferred Time</b></label>
                   <select id="" class="form-control textbx">
-                    <option selected>Choose...</option>
+                    <option selected>Any time</option>
                     <option>...</option>
                   </select>
                 </div>
               </div>
               <br>
               <div style="width: 270px;height: 66px;left: 851.5px;background: #262626;padding-top: 20px; padding-left: 75px;" class="float-right">
-                <a href="#" style="font-family: Muli;
-                font-style: normal;
+                <a href="#" style="font-style: normal;
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 20px;
                 /* identical to box height */
                 letter-spacing: 0.444444px;
-                color: #FFFFFF;">Send Request <i class="icofont-arrow-right "></i></a>
+                color: #FFFFFF;">Send Request <i class="fa fa-long-arrow-right"></i></a>
               </div>
             </form>
           </div>
-        </div>     
+        </div>
       </div>
     </div>
 
@@ -1048,7 +1022,7 @@
 
           <div class="col-lg-3 col-md-3" data-aos="fade-up" data-aos-delay="100">
             <div class="contact-about">
-              <h3>edXBee</h3>
+              <img src="assets\img\Group 9 Copy.png"></br></br></br>
               <h6>Registered Office</h6>
               <div class="row">
                 <div class="col-md-6 col-lg-6">
@@ -1068,22 +1042,27 @@
                   <p>24/7 </p>
                 </div>
               </div>
-              
-              
+
+
             </div>
           </div>
 
           <div class="col-lg-2 col-md-2 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
             <div class="info">
               <h6>Legal</h6>
-              <p>Terms of Us T&C Privacy Notice EULA Disclaimer Cookie Policy</p>
+              <p>Terms of Use </br>
+			  T&C </br>
+			  Privacy Notice </br>
+			  EULA </br>
+			  Disclaimer </br>
+			  Cookie Policy</p>
 
             </div>
           </div>
 
           <div class="col-lg-3 col-md-3" data-aos="fade-up" data-aos-delay="100">
             <div class="contact-about">
-              
+
               <h6>BeeFun</h6>
               <div class="row">
                 <div class="col-md-6 col-lg-6">
@@ -1106,25 +1085,25 @@
                    BeeEnergetic <br>
                    BeeTalented <br>
                    BeeThankful<br>
-                   
+
                  </p>
                </div>
              </div>
            </div>
          </div>
-         
+
          <div class="col-lg-2 col-md-2 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
           <div class="info">
             <h6>Learn More</h6>
-            <p>Our Story
-              Message from Directors
-              Personalities
-              Why edxbee
-              Careers
-              CSR Projects
-              Sustainability
-              FAQs
-              Media Centre
+            <p>Our Story <br>
+              Message from Directors <br>
+              Personalities <br>
+              Why edxbee <br>
+              Careers <br>
+              CSR Projects <br>
+              Sustainability <br>
+              FAQs <br>
+              Media Centre <br>
             Important Numbers</p>
 
           </div>
@@ -1155,7 +1134,7 @@
 
 
         color: #FFFFFF;">
-        &copy; Copyright <strong> 2020 edxbee.com</strong>. All Rights Reserved
+        &copy;  2020 edxbee.com
       </div>
     </div>
   </div>
